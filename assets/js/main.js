@@ -228,3 +228,14 @@
   });
 
 })()
+
+const checkbox = document.querySelector("#termo")
+const btnVerifica = document.querySelector("#btnVerifica")
+checkbox.addEventListener("click", () => {
+    if(checkbox.checked){
+      btnVerifica.disabled = false;
+      // alert("okay")
+    }else{
+      btnVerifica.disabled = true
+     }
+})
